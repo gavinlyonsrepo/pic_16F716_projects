@@ -16,19 +16,12 @@ Features
 ----------------------
 
 In this folder the source code in c can be found in file blink_16f716.c.
-LED attached to RA2
-This code is based on using an RC external oscillator.
-* Vdd = 5v
-* Vih = Vdd * 0.9 = 4.5v
-* Rext = 10k
-* Cext = 22pf
+LED attached to PORTA RA2 every second
 
-The calculations show the charge time of the RC circuit to reach the Vih level is 506 nanoseconds.
-
-* Time=(10k∗22pf)ln((5v/(5v−4.5))=506nanoseconds
-* OscillatorFrequency(Fosc)=1/Time=1/506nanoseconds=1.976Mhz
-* InstructionClock=Fosc/4=494Khz
-
+If you want to use the RC oscillator to osicllator circuit just comment 
+in the freq and config word and comment out the HS values(high speed)
+See here for more detail on how to calculate.
+http://microchipdeveloper.com/8bit:extrc
 
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/blink.jpg)
 

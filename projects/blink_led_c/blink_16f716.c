@@ -9,11 +9,13 @@
 #include <xc.h>
 
 #ifndef _XTAL_FREQ
-  #define _XTAL_FREQ 1976000 //RC circuit. 
+  //#define _XTAL_FREQ 55777 //RC circuit 470Pf 51k 
+  #define _XTAL_FREQ 4000000
 #endif
 
 // BEGIN CONFIG
-#pragma config FOSC = RC // Oscillator Selection bits (RC oscillator)
+//#pragma config FOSC = RC // Oscillator Selection bits (RC oscillator)
+#pragma config FOSC = HS // Oscillator Selection bits (HS oscillator)
 #pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT enabled)
 #pragma config PWRTE = OFF // Power-up Timer Enable bit (PWRT disabled)
 #pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR enabled)

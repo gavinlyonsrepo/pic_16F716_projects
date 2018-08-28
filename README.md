@@ -5,9 +5,8 @@
 Overview
 --------------------------------------------
 * Name: pic_16F716_projects
-* Title : Example code and projects for Pic 16F716 Microcontroller
-* Description: A set of Projects and example code for a Pic 16F716 Microcontroller. 
-in C and Assembly.
+* Description: A set of Projects and example code for a Pic 16F716 Microcontroller,
+written in C.
 * Author: Gavin Lyons 
 
 Table of contents
@@ -23,16 +22,15 @@ Table of contents
 
 Project List
 -----------------------------------------
-A set of Project and example code for a 8-bin 8-bit Pic 16F716 Microcontroller. 
-in C and Assembly.
+A set of Project and example code for the 18-pin, 8-bit Pic 16F716 Microcontroller,
+in C.
 Each Project/example has a short readme, schematic and code file
 in the relevant subfolder.
 
 
 1. Blink LED in C code.
-2. Blink LED in assembly code.
-3. TODO
-4. ...
+2. TODO
+3. ...
 
 
 Communication
@@ -42,7 +40,7 @@ please send a report.
 Pull requests, suggestions for improvements
 and new features welcome.
 * Contact: Upstream repo at github site below or glyons66@hotmail.com
-* Upstream repository: https://github.com/gavinlyonsrepo/pic_12F675_projects
+* Upstream repository: https://github.com/gavinlyonsrepo/pic_16F716_projects
 
 History
 ------------------
