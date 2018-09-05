@@ -36,21 +36,21 @@ MCLR pin is tied high thru a pullup. as it is the active low reset.
 
 The clock is 16Mhz. The ADC is read on the timer input.
 
-Clock Source in Mhz	16	Mhz			
-Fosc   	16000000	Hz			
-Fosc / 4	4000000	Hz			
-Time Period	2.5E-07	sec			
-Prescaler	256				
-Timer0 Interrupt Period	0.016384	sec			
-Frequency	61.03515625	Hz			
-Period of Frequency Input To Timer0	6.4E-05	sec			
-Period of Time for each Timer0 Count	0.016384	sec			
+1. Clock Source in Mhz	16	Mhz			
+2. Fosc   	16000000	Hz			
+3. Fosc / 4	4000000	Hz			
+4. Time Period	2.5E-07	sec			
+5. Prescaler	256				
+6. Timer0 Interrupt Period	0.016384	sec			
+7. Frequency	61.03515625	Hz			
+8. Period of Frequency Input To Timer0	6.4E-05	sec			
+9. Period of Time for each Timer0 Count	0.016384	sec			
 					
-Preload (TMR0 value)	6				
-Delay (Timer0 Period with Preload)	0.016	sec		0.016	sec
+10. Preload (TMR0 value)	6				
+11. Delay (Timer0 Period with Preload)	0.016	sec		0.016	sec
 					
-Required Timer	1	sec			
-Number of Interrupts	62.5				
+12. Required Timer	1	sec			
+13. Number of Interrupts	62.5				
 
 The timer interrupts overflows every .016 mS and a incrementalist counter refresh's display every second approx.
 
@@ -72,7 +72,7 @@ The timer interrupts overflows every .016 mS and a incrementalist counter refres
 By using a shift register the number of pins needed to drive 4 digit 7-seg could be reduced from 12 to 8.
  
 
-![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.jpg)
+![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.png)
 
 
 Note for schematic I used a 4-digit SMA420564 LED module wiring as per table above.
@@ -80,6 +80,6 @@ In schematic I used four 1-digit LED modules
 From a software and function point of view = same thing.
 Assume all the 4 LED module are daisy chained together a to a b to b etc.
 
-![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segADC.jpg)
+![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segADC.png)
 
  
