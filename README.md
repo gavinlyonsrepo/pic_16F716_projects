@@ -5,7 +5,7 @@
 Overview
 --------------------------------------------
 * Name: pic_16F716_projects
-* Description: A set of Projects and example code for a Pic 16F716 Microcontroller,
+* Description: A set of projects and example code for a Pic 16F716 Microcontroller,
 written in C.
 * Author: Gavin Lyons 
 
@@ -29,7 +29,7 @@ in the relevant subfolder.
 
 
 1. Blink LED in C code.
-2. TODO
+2. 4-digit seven segment LED display displaying ADC value in C code 
 3. ...
 
 
