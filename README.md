@@ -22,22 +22,23 @@ Table of contents
 
 Project List
 -----------------------------------------
-A set of Project and example code for the 18-pin, 8-bit Pic 16F716 Microcontroller,
+A set of Projects and example code for the 18-pin, 8-bit Pic 16F716 Microcontroller,
 in C.
 Each Project/example has a short readme, schematic and code file
 in the relevant subfolder.
 
 
-1. Blink LED in C code.
-2. 4-digit seven segment LED display displaying ADC value in C code 
-3. ...
+| Num | Desc | Link |
+| --- | --- | --- |
+| 1  | Blink LED in C code  | [URL](projects/blink_led_c) |
+| 2  | 4-digit 7 segment LED displaying ADC value in C code. | [URL](projects/7seg_ADC)
+| 3  | B4-digit 7 segment LED displaying DHT11 sensors data in C code. | [URL](projects/7seg_dht11)
 
 
 Communication
 -----------
-If you should find a bug or you have any other query, 
-please send a report.
-Pull requests, suggestions for improvements
+
+Bug reports, Pull requests, suggestions for improvements
 and new features welcome.
 * Contact: Upstream repo at github site below or glyons66@hotmail.com
 * Upstream repository: https://github.com/gavinlyonsrepo/pic_16F716_projects
@@ -47,7 +48,7 @@ History
 
 * See changelog.md in documentation section for version control history
 
- 
+
 Copyright
 ---------
 Copyright (C) 2018 Gavin Lyons 
