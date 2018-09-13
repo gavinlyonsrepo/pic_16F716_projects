@@ -29,13 +29,13 @@ PortB is connected to the anodes of the SMA420564,
 With exception of RB7 which is not connected. 
 The Decimal point pin on SMA420564 is not connected as its not needed for this application. 
 PortA is connected to the common cathode of each digit thru a transistor switch.
-with exception of RA0 which is connected to the Sensor.
+with exception of RA0 which is connected to the Sensor signal line.
 RA4 requires a 10K pullup resistor to function as digital output here
 as it is Open drain when configured as output.
 
 MCLR pin is tied high thru a pullup. as it is the active low reset. 
 
-The clock is 16Mhz. The ADC is read on the timer input.
+The clock is 16Mhz. The Sensor output is read on the timer overflow.
 
 1. Clock Source in Mhz	16	Mhz			
 2. Fosc   	16000000	Hz			
