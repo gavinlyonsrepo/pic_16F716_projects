@@ -15,9 +15,9 @@
 
 // BEGIN CONFIG
 #pragma config FOSC = HS // Oscillator Selection bits (RC oscillator)
-#pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT enabled)
+#pragma config WDTE = OFF // Watchdog Timer Enable bit (WDT disabled)
 #pragma config PWRTE = OFF // Power-up Timer Enable bit (PWRT disabled)
-#pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR enabled)
+#pragma config BOREN = OFF // Brown-out Reset Enable bit (BOR disabled)
 #pragma config CP = OFF // Flash Program Memory Code Protection bit (Code protection off)
 //END CONFIG
 

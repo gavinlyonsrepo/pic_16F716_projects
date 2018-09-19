@@ -31,8 +31,9 @@ in the relevant subfolder.
 | Num | Desc | Link |
 | --- | --- | --- |
 | 1  | Blink LED in C code  | [URL](projects/blink_led_c) |
-| 2  | 4-digit 7 segment LED displaying ADC value in C code. | [URL](projects/7seg_ADC)
+| 2  | 4-digit 7 segment LED displaying ADC input value in C code. | [URL](projects/7seg_ADC)
 | 3  | 4-digit 7 segment LED displaying DHT11 sensors data in C code. | [URL](projects/7seg_dht11)
+| 4  | Nokia 5110 LCD displaying ADC input value in C code. | [URL](projects/nokia_5110)
 
 
 Communication

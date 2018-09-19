@@ -34,7 +34,7 @@ as it is Open drain when configured as output.
 
 MCLR pin is tied high thru a pullup. as it is the active low reset. 
 
-The clock is 16Mhz. The ADC is read on the timer input.
+The clock is 16Mhz. The ADC is read on the timer0 overflow interrupt.
 
 1. Clock Source in Mhz	16	Mhz			
 2. Fosc   	16000000	Hz			
