@@ -58,12 +58,6 @@ and a incrementalist counter refresh's display every 2 second approx.
 | RB4 10| LCD_RST Pin 1 reset|
 
 
-#define LCD_CLK RB0
-#define LCD_DIN RB1
-#define LCD_DC RB2
-#define LCD_CE RB5
-#define LCD_RST RB4
-
 Connect Nokia 5110 VCC(pin 6)to 3.3V, some may appear work at 5V
 but they are not supposed to and may
 overtime fail or work intermittent.
