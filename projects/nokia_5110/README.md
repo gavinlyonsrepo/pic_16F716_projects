@@ -67,13 +67,22 @@ These settings are in the LCDinit function.
 A resistor or pot can be connected between (Nokia LCD) GND(pin8) and LIGHT(pin7) to switch on backlight
 and adjust it.
 
-The ADC is 8-bit 256. so 3.3V/256 = volts per unit = 0.01289
-So multiple the ADC value(lets say 120 for example) to get voltage (0.01289 X 120) = 1.548V
 
 
-[dataSheet LCD](https://www.sparkfun.com/datasheets/LCD/Monochrome/Nokia5110.pdf)
+
+[Nokia 5110 LCD dataSheet ](https://www.sparkfun.com/datasheets/LCD/Monochrome/Nokia5110.pdf)
+
+Schematic.
 
 ![SCH](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/5110.png)
+
+
+**Practical Application as a battery tester**
+
+The ADC is 8-bit 256. so at 3.3V supply 3.3V/256 = volts per unit = 0.01289
+So multiple the given ADC value(lets say 120 for example) to get voltage (0.01289 X 120) = 1.548V
+Replace pot with battery connector and add a load and 10K pull down resistor.
+This can then measure any battery below 3.3V. where ADC 255= 3.3V.
 
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/nokiapic.jpg)
 

@@ -13,6 +13,7 @@
 #include <stdbool.h> /* For true/false definition */
 #include <stdio.h> /* for sprintf */
 
+
 /* ======== Define and Pragma Directives   ======== */
 
 #define _XTAL_FREQ 16000000
@@ -144,9 +145,10 @@ const unsigned char ASCII[][5] = {
 ,{0x78, 0x46, 0x41, 0x46, 0x78} // 7f DEL
 };
 
-
 uint8_t potvalue=150; // to hold pot value from RA0
-uint8_t counter=0;   //counter incremented by Timer0 overflow.
+uint8_t counter=0;   //counter incremented by Timer0 overflow
+
+
 
 /* ==== Function prototypes ===== */
 void setup(void);
@@ -169,7 +171,7 @@ void main(void) {
     LCDClear();
     while(1)
     {
-        __nop;
+       
     }    
     return;
 }
@@ -183,11 +185,18 @@ void main(void) {
 void LCDDisplay(void)
 {
       LCDClear();
-      char str[3];
-      LCDString("PIC  16F716!");
-      LCDString("ADC  RA0   :");
+      char str[4];
+      char strtwo[7];
+      int voltvalue=1;
+      LCDString("Battery Test");
+      LCDString("ADC        :");     
       sprintf(str, "%d", potvalue); // convert int to string
       LCDString(str);
+      gotoXY(0 , 3);
+      LCDString("ADC * 129  :");     
+      voltvalue = potvalue * 129;
+      sprintf(strtwo, "%d", voltvalue);
+      LCDString(strtwo);
 }
 
 
@@ -237,7 +246,9 @@ void LCDClear(void) {
     gotoXY(0, 0); //After we clear the display, return to the home position
     }
 
-/* Function: gotoXY*/
+/* Function: gotoXY gotoXY routine to position cursor 
+ x - range: 0 to 84
+ y - range: 0 to 5 ( 6 blocks one byte each 6*8 = 48*/
 void gotoXY(int x, int y) {
     LCDWrite(0, 0x80 | x); // Column.
     LCDWrite(0, 0x40 | y); // Row.
@@ -258,7 +269,11 @@ void setup()
     // Setup timer option_reg register
     T0CS=0;   // SELECT TIMER0
     PSA=0;    // PRESCALER ASSIGNED TO TIMER0
-    OPTION_REG &= 0x07;    // SELECT 1:256
+    //OPTION_REG &= 0x07;    // SELECT 1:256
+    PS2=1;   
+    PS1=1;
+    PS0=1;
+    
     //interupts intcon register      
     GIE=1;        // ENABLE GLOBAL INTERRUPT
     T0IE=1;       // TIMER0 INERRUPT ENABLE
