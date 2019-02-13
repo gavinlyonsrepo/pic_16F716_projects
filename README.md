@@ -34,8 +34,9 @@ in the relevant subfolder.
 | 2  | 4-digit 7 segment LED displaying ADC input value in C code. | [URL](projects/7seg_ADC)
 
 **Project List:**
+
 | Num | Desc | Link |
-| --- | --- | --- 
+| --- | --- | --- |
 | 1  | 4-digit 7 segment LED displaying DHT11 sensors data in C code. | [URL](projects/7seg_dht11)
 | 2  | Nokia 5110 LCD displaying ADC input value in C code. Battery tester | [URL](projects/nokia_5110)
 
