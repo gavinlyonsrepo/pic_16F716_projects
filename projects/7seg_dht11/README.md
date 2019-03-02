@@ -53,7 +53,7 @@ The clock is 16Mhz. The Sensor output is read on the timer overflow.
 12. Required Timer	1	sec			
 13. Number of Interrupts	62.5				
 
-The timer interrupts overflows every .016 mS and a incrementalist counter refresh's display every 2 second approx.
+The timer interrupts overflows every .016 mS and a incremental counter refresh's display every 2 second approx.
 
 
 **Error codes**
@@ -87,12 +87,9 @@ Communication Format with DHT11 can be separated into three stages.
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.png)
 
 
-Note for schematic: I used a 4-digit SMA420564 LED module wiring as per table above.
-In schematic I used four 1-digit LED modules. 
-From a software and function point of view they are same thing.
-Assume all the 4 LED module are daisy chained together a to a b to b etc.
-DHT11 is attached to RA0 as "R1"
+NOTE: For schematic the pin number labels on 4-digit 7-segment are wrong: Use the pin numbers in table above 
+or just use the pin name(letter) labels on part which are correct.
 
-![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segADC.png)
+![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segDHT11.png)
 
  

@@ -52,7 +52,7 @@ The clock is 16Mhz. The ADC is read on the timer0 overflow interrupt.
 12. Required Timer	1	sec			
 13. Number of Interrupts	62.5				
 
-The timer interrupts overflows every .016 mS and a incrementalist counter refresh's display every second approx.
+The timer interrupts overflows every .016 mS and a incremental counter refresh's display every second approx.
 
 
 | Pic 16F716 pin  | LED module SMA420564 |
@@ -75,10 +75,9 @@ By using a shift register the number of pins needed to drive 4 digit 7-seg could
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.png)
 
 
-Note for schematic I used a 4-digit SMA420564 LED module wiring as per table above.
-In schematic I used four 1-digit LED modules
-From a software and function point of view = same thing.
-Assume all the 4 LED module are daisy chained together a to a b to b etc.
+NOTE: For schematic the pin number labels on 4-digit 7-segment are wrong: Use the pin numbers in table above 
+or just use the pin name(letter) labels on part which are correct.
+
 
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segADC.png)
 
