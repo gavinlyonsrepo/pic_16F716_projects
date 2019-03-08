@@ -75,8 +75,8 @@ By using a shift register the number of pins needed to drive 4 digit 7-seg could
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.png)
 
 
-NOTE: For schematic the pin number labels on 4-digit 7-segment are wrong: Use the pin numbers in table above 
-or just use the pin name(letter) labels on part which are correct.
+Schematic
+----------------------------------
 
 
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segADC.png)

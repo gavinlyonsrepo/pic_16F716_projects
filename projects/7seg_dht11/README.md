@@ -87,8 +87,10 @@ Communication Format with DHT11 can be separated into three stages.
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segpinout.png)
 
 
-NOTE: For schematic the pin number labels on 4-digit 7-segment are wrong: Use the pin numbers in table above 
-or just use the pin name(letter) labels on part which are correct.
+
+Schematic
+----------------------------------
+
 
 ![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/7segDHT11.png)
 
