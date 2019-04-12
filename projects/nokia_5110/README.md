@@ -29,24 +29,8 @@ MCLR pin is tied high thru a pullup. as it is the active low reset.
 
 The clock is 16Mhz. The ADC is read on the timer0 interrupt.
 
-1. Clock Source in Mhz  16  Mhz
-2. Fosc     16000000    Hz
-3. Fosc / 4 4000000 Hz
-4. Time Period  2.5E-07 sec
-5. Prescaler    256
-6. Timer0 Interrupt Period  0.016384    sec
-7. Frequency    61.03515625 Hz
-8. Period of Frequency Input To Timer0  6.4E-05 sec
-9. Period of Time for each Timer0 Count 0.016384    sec
-
-10. Preload (TMR0 value)    0
-11. Delay (Timer0 Period with Preload)  0.016   sec     0.016   sec
-
-12. Required Timer  1   sec
-13. Number of Interrupts    62.5
-
-The timer interrupts overflows every .016 mS
-and a incrementalist counter refresh's display every 2 second approx.
+The timer interrupts overflows every 0.016 mS
+and a incremental counter will refresh display every 2 second approx.
 
 
 | Pic 16F716 pin  | Nokia 5110 LCD|
@@ -66,9 +50,6 @@ to the screen at hand for optimal display.
 These settings are in the LCDinit function.
 A resistor or pot can be connected between (Nokia LCD) GND(pin8) and LIGHT(pin7) to switch on backlight
 and adjust it.
-
-
-
 
 [Nokia 5110 LCD dataSheet ](https://www.sparkfun.com/datasheets/LCD/Monochrome/Nokia5110.pdf)
 
