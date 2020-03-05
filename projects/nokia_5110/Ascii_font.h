@@ -1,14 +1,15 @@
 /* ======== Header ============
  * File:  Ascii_font.h
  * Author: Gavin Lyons
- * IDE: MPLAB X : v5.15
- * Complier: xc8 v2.00
+ * IDE: MPLAB X : v5.30
+ * Complier: xc8 v2.10
  * URL: https://github.com/gavinlyonsrepo/pic_16F716_projects
  * Created on 18 September 2018, 00:03
  */
 
 #ifndef Ascii_font_H
 #define	Ascii_font_H
+
 // Define the ASCII table as Data array
 // cols left to right 0x00 is  off 0xFF is all on
 //  each character is five bytes wide one byte height. 
@@ -105,11 +106,6 @@ const unsigned char ASCII[][5] = {
 ,{0x44, 0x28, 0x10, 0x28, 0x44} // 78 x
 ,{0x0c, 0x50, 0x50, 0x50, 0x3c} // 79 y
 ,{0x44, 0x64, 0x54, 0x4c, 0x44} // 7a z
-,{0x00, 0x08, 0x36, 0x41, 0x00} // 7b {
-,{0x00, 0x00, 0x7f, 0x00, 0x00} // 7c |
-,{0x00, 0x41, 0x36, 0x08, 0x00} // 7d }
-,{0x10, 0x08, 0x08, 0x10, 0x08} // 7e ~
-,{0x78, 0x46, 0x41, 0x46, 0x78} // 7f DEL
 };
 
 #endif	/* XC_HEADER_TEMPLATE_H */

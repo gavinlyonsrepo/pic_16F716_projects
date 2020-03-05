@@ -23,7 +23,7 @@ In this folder the source code in c can be found in Nokia_5110.c
 The 8-bit ADC (0 to 255) value is read from a pot attached to pin RA0.
 
 Most of PortB is connected to the Nokia 5110 LCD.
-Five pins are required for the LCD.
+Five pins are required for the LCD. Vdd is set at 3.3V exactly. 
 
 MCLR pin is tied high thru a pullup. as it is the active low reset.
 

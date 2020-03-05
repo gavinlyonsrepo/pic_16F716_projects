@@ -29,6 +29,7 @@
 /* ======= Globals========*/
 uint8_t potvalue=150; // to hold pot value from RA0
 uint8_t counter=0;   //counter incremented by Timer0 overflow
+uint16_t testcount=0;   // test counter
 
 /* ==== Function prototypes ===== */
 void setup(void);
@@ -45,6 +46,7 @@ void main(void) {
     while(1)
     {
        //Everything is done on timer0 interrupt.
+        __nop();
     }    
     return;
 }
@@ -60,20 +62,22 @@ void Data_Display(void)
       LCDClear();
       
       char strADC[4];
-      char strVolt1[2];
-      char strVolt2[5];
+      char strVolt[7];
+      char strCount[12];
       uint16_t voltvalue=1;
  
       //calculations 
-       sprintf(strADC, "%d", potvalue); // convert int to string
-       voltvalue = potvalue * 129;
-      sprintf(strVolt1, "%u", (( voltvalue/10000)%10));
-      sprintf(strVolt2, "%u%u%u%u", (( voltvalue/1000)%10), (( voltvalue/100)%10), (( voltvalue/10)%10), ( voltvalue%10 ));
+      testcount++;
+	  if (testcount >= 65000) testcount = 0; // reset test count
+      if ( potvalue <= 6 )  potvalue = 0; // Don't display very low value.
+      sprintf(strADC, "%d", potvalue); // convert int to string
+      voltvalue = potvalue * 129; // 3.3/255 = .0129 changed to 129 to avoid float usage. 
+      sprintf(strVolt, "%u.%u%u%u%u", (voltvalue/10000)%10, (voltvalue/1000)%10, (voltvalue/100)%10, (voltvalue/10)%10, voltvalue%10);
+      sprintf(strCount, "Count %u", testcount);
       
-      
-      LCDString("3.3V Battery");
+      LCDString("3.3V BatTest");
       LCDgotoXY(0 , 1);
-      LCDString("Tester. GL");
+      LCDString(strCount);
       LCDgotoXY(0 , 2);
       LCDString("ADC Value:");
       LCDgotoXY(0 , 3);
@@ -81,9 +85,7 @@ void Data_Display(void)
       LCDgotoXY(0 , 4);
       LCDString("Voltage:");     
       LCDgotoXY(0 , 5);
-      LCDString(strVolt1);
-      LCDString(".");
-      LCDString(strVolt2);
+      LCDString(strVolt);
 }
 
 
