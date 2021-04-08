@@ -1,20 +1,9 @@
-
-![PIC](https://github.com/gavinlyonsrepo/pic_16F716_projects/blob/master/images/pic16F716.jpg)
-
 Overview
 --------------------------------------------
 * Name: pic_16F716_projects
 * Description: Projects for a PIC 16F716 Microcontroller.
 * Author: Gavin Lyons 
 * Copyright: Gavin Lyons (C) 2018 , see LICENSE.md in documentation section 
-
-
-Table of contents
----------------------------
-
-  * [Overview](#overview)
-  * [Table of contents](#table-of-contents)
-  * [Project List](#project-list)
 
 Project List
 -----------------------------------------
